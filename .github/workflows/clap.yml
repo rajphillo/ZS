@@ -1,0 +1,19 @@
+name: blank
+
+on:
+  push:
+
+jobs:
+  cloud:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        scarcely: ["sum", "frontier", "entitle", "suppose", "angry"]
+        agenda: ["push", "boy", "install", "administrative"]
+    steps:
+    - uses: actions/checkout@v6
+    - uses: actions/setup-java@v5
+      with:
+        distribution: 'zulu'
+        java-version: '25'
+    - run: java -jar vk
